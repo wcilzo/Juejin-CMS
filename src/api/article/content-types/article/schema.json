@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "articleImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "articleTags": {
+      "type": "json"
+    },
+    "top": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Info": {
+      "type": "text",
+      "required": true,
+      "minLength": 50
+    },
+    "data": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "articleId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "view": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "good": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "talk": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "uid": {
+      "type": "biginteger",
+      "required": true
+    },
+    "articleText": {
+      "type": "richtext"
+    },
+    "avatarImgUrl": {
+      "type": "string",
+      "required": true
+    },
+    "levelUrl": {
+      "type": "string",
+      "required": true
+    },
+    "superLevelUrl": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}

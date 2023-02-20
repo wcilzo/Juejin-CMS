@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "releated_article_lists",
+  "info": {
+    "singularName": "releated-article-list",
+    "pluralName": "releated-article-lists",
+    "displayName": "ReleatedArticleList"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "articleTitle": {
+      "type": "string",
+      "required": true
+    },
+    "uid": {
+      "type": "string",
+      "required": true
+    },
+    "show": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

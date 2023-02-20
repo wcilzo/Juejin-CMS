@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_lists",
+  "info": {
+    "singularName": "author-list",
+    "pluralName": "author-lists",
+    "displayName": "AuthorList"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "authorName": {
+      "type": "string",
+      "required": true
+    },
+    "authorImgUrl": {
+      "type": "string",
+      "required": true
+    },
+    "authorLevelUrl": {
+      "type": "string",
+      "required": true
+    },
+    "authorInfo": {
+      "type": "text"
+    },
+    "atuthorImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "show": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_lists",
+  "info": {
+    "singularName": "nav-list",
+    "pluralName": "nav-lists",
+    "displayName": "navList"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tags": {
+      "type": "json"
+    },
+    "show": {
+      "type": "boolean"
+    }
+  }
+}
