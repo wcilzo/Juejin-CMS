@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article"
+    "displayName": "Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,14 +17,16 @@
       "required": true
     },
     "articleImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "articleTags": {
-      "type": "json"
+      "type": "json",
+      "required": false
     },
     "top": {
       "type": "boolean"
@@ -41,9 +44,6 @@
       "type": "string",
       "required": true,
       "minLength": 2
-    },
-    "imageUrl": {
-      "type": "string"
     },
     "articleId": {
       "type": "biginteger",
@@ -68,23 +68,29 @@
     "articleText": {
       "type": "richtext"
     },
-    "avatarImgUrl": {
-      "type": "string",
-      "required": true
-    },
-    "levelUrl": {
-      "type": "string",
-      "required": true
-    },
-    "superLevelUrl": {
-      "type": "string",
-      "required": true
-    },
     "time": {
       "type": "string",
       "required": true
     },
     "role": {
+      "type": "string"
+    },
+    "avatarImgUrl": {
+      "type": "string",
+      "default": "http://localhost:1337/uploads/2889309425_100x100_87dcef18a5.awebp?width=100&height=100",
+      "required": true
+    },
+    "superLevelUrl": {
+      "type": "string",
+      "default": "http://localhost:1337/uploads/ffdbad884aa0e7884cbcf924226df6ce_88107ef42b.svg?width=16&height=16",
+      "required": true
+    },
+    "levelUrl": {
+      "type": "string",
+      "required": true,
+      "default": "http://localhost:1337/uploads/lv_2_99ba5b2_8719f575bf.png?width=140&height=64"
+    },
+    "imageUrl": {
       "type": "string"
     }
   }
