@@ -26,7 +26,7 @@
     },
     "articleTags": {
       "type": "json",
-      "required": false
+      "required": true
     },
     "top": {
       "type": "boolean"
