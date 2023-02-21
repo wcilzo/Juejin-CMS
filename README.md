@@ -1,10 +1,43 @@
-# 🚀 Getting started with Strapi
+# Juejin-CMS
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+本项目是基于Strapi的CMS系统，对[thresh111/thresh111-JueJin_id9527 (github.com)](https://github.com/thresh111/thresh111-JueJin_id9527)数据进行管理。
 
-### `develop`
+### 后台管理员账号
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+```
+账号: 9527@juejin.com
+密码: Qq123456
+```
+
+## 准备工作
+
+在项目开始前，您需要将本项目clone到您的电脑主机。
+
+### 安装node和yarn
+
+安装node 16.x以上的 node.js, 使用yarn进行包管理。
+
+node 版本 16.x <= node <= 18.x, 推荐使用 18.13.0
+
+yarn 安装参考 [安装 | Yarn 中文文档 (bootcss.com)](https://yarn.bootcss.com/docs/install/#windows-stable)
+
+若已有符合要求的 node 版本，直接进行下一步。
+
+### 安装依赖
+
+在运行项目之前，您需要先安装依赖。使用 yarn 包管理器安装项目依赖：
+
+```
+yarn install
+```
+
+## 运行项目
+
+安装依赖之后，您可以使用以下命令来启动项目：
+
+#### `develop`
+
+此模式能够对后台内容和插件进行管理，推荐在数据维护的时候使用，使用如下命令启动。
 
 ```
 npm run develop
@@ -12,9 +45,9 @@ npm run develop
 yarn develop
 ```
 
-### `start`
+#### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+此模式推荐在生产模式进行使用，此时您不能够改变插件和数据。需要注意的是，需要在使用`yarn build`命令后使用。
 
 ```
 npm run start
@@ -22,36 +55,12 @@ npm run start
 yarn start
 ```
 
-### `build`
+#### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+在使用start命令前对当前项目进行打包。
 
 ```
 npm run build
 # or
 yarn build
 ```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
